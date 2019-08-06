@@ -3,7 +3,6 @@ gunicorn
 django-heroku
 nltk
 numpy 
-string 
 sklearn
 eel
 os
