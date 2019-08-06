@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="dasbotjs.js"></script>
+    <script type="text/javascript" src="/eel.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+<!------ Include the above in your HEAD tag ---------->
+</head>
+<body>
+    
+    <div class="chat_window">
+        <div class="top_menu">
+            <div class="buttons">
+                <div class="button close"></div>
+                <div class="button minimize"></div>
+                <div class="button maximize"></div>
+            </div>
+            <div class="title">DAS</div>
+        </div>
+        <ul id="texts" class="messages"></ul>
+        <div class="bottom_wrapper clearfix">
+            <div class="message_input_wrapper">
+                <input id="data" class="message_input" placeholder="Type your message here..." />
+            </div>
+            <input type="button" id="submit" class="message_send" value="Send" onclick="send_msg()" />
+        </div>
+    </div>
+    <script>
+        var input = document.getElementById("data");
+        input.addEventListener("keyup", function(event) {
+            if (event.keyCode === 13) {
+                event.preventDefault();
+                document.getElementById("submit").click();
+                input.value='';
+            }
+        });
+    </script>
+
+    <div class="message_template">
+        <li class="message">
+            <div class="avatar"></div>
+            <div class="text_wrapper">
+                <div class="text"></div>
+            </div>
+        </li>
+    </div>
+</body>
+</html>

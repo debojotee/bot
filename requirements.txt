@@ -1,0 +1,13 @@
+django
+gunicorn
+django-heroku
+nltk
+numpy 
+random
+string 
+sklearn
+eel
+os
+pyttsx3
+wikipediaapi
+sys
