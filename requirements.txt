@@ -5,7 +5,7 @@ nltk
 numpy 
 sklearn
 eel
-os
+
 pyttsx3
 wikipediaapi
-sys
+
